@@ -1,0 +1,492 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.welcome_signup,
+.toggle_btn {
+    display: none;
+}
+
+
+header {
+    background-color: #1199dd;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    background-color: #1199dd;
+    justify-content: space-evenly;
+    padding: 1rem;
+    /* border: 2px solid black; */
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+
+
+
+.dropdown {
+    display: none;
+    position: sticky;
+    /* top: 4rem ; */
+    width: 100%;
+    height: 0;
+    /* background-color: rgba(128, 128, 128, 0.781); */
+    /* backdrop-filter: blur(15px); */
+    /* right: 0rem; */
+    overflow: hidden;
+    transition: 0.5s ease;
+    /* border: 1px solid red; */
+}
+
+.dropdown a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown.open {
+    height: 190px;
+    /* position: sticky; */
+}
+
+.dropdown li {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heading {
+    font-size: 1.3rem;
+}
+
+.options li {
+    display: flex;
+
+}
+
+.options li ul a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.options li ul a:hover {
+    text-decoration: underline;
+}
+
+.home {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img img {
+    margin-top: 3rem;
+    width: 70vh;
+    /* border: 2px solid black;     */
+}
+
+.welcome h4 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.header_btn {
+    background: none;
+    color: white;
+    height: 1.7rem;
+    width: 9rem;
+    border-radius: 1rem;
+    border: 1px solid white;
+    /* margin-right: 1rem; */
+    cursor: pointer;
+}
+
+.header_btn:hover {
+    color: #1199dd;
+    background-color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* app section working */
+.app_section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5eff6;
+}
+
+.content {
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid pink; */
+    padding: 2rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box {
+    /* border: 2px solid yellow; */
+    margin-right: 2rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.mob_img {
+    /* border: 2px solid black; */
+    width: 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    margin: auto;
+}
+
+.mob_img img {
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.app_heading {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.heading_lastword {
+    font-size: 100%;
+    color: #1199dd;
+}
+
+/* working on team section */
+.team_section {
+    background-color: rgba(235, 235, 235, 0.281);
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+
+.team_heading,
+.team_heading~p {
+    text-align: center;
+    width: 40%;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding: 0.4rem;
+}
+
+/* CSS FOR CAROUSEL */
+.carousel-item {
+    /* background-color: yellow; */
+    height: 45vh;
+
+}
+
+.carousel-indicators {
+    background-color: rgba(0, 0, 0, 0.062);
+    /* border: 1px solid red; */
+    border-radius: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    /* border: 1px solid red; */
+    margin: 1rem;
+}
+
+.inner-container h3 {
+    letter-spacing: 0.5rem;
+}
+
+.container img {
+    width: 20vw;
+    padding: 1rem;
+}
+
+/* working on price section */
+.price_section {
+    background-color: #e5eff6;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid green; */
+}
+
+.price_heading,
+.price_heading~p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding: 0.4rem;
+}
+
+.price_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricebox {
+    width: 22%;
+    height: 100%;
+    border: 1px solid black;
+    margin: 2rem;
+    background-color: white;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    border: none;
+    position: relative;
+    bottom: 0rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.pricebox:hover {
+    /* position: relative; */
+    bottom: 1rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.212);
+    /* background-color: #1199dd; */
+}
+
+.inner-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.head h3 {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.price {
+    background-color: #1199dd09;
+}
+
+.price span {
+    font-size: 4rem;
+    color: #1199dd;
+}
+
+.btn button {
+    background-color: transparent;
+    color: #1199dd;
+    border: 1px solid #1199dd;
+    width: 100%;
+    height: 40%;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    position: relative;
+    top: 3rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn button:hover {
+    background-color: #1199dd;
+    color: white;
+}
+
+
+/* working on contact section */
+.contact_section {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid green; */
+}
+
+.contact_container {
+    display: flex;
+}
+
+.colorbox {
+    width: 50%;
+    background-color: #5dbff0;
+}
+
+.contactform {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 1rem;
+    margin: auto;
+}
+
+.contactform input,
+.contactform textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+    border: 0.5px solid grey;
+}
+
+.contactform button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #1199dd;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #1f7faf;
+    color: white;
+    height: 5vh;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+footer {
+    height: 100%;
+}
+
+.social_media {
+    display: flex;
+    justify-content: center;
+}
+
+.social_media a {
+    margin: 2rem;
+
+}
+
+.social_media a i {
+    font-size: 3rem;
+}
+
+
+/* //Making it responsive */
+
+@media screen and (max-width:827px) {
+    .mob_img {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .welcome button {
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width:763px) {
+
+    .welcome button {
+        top: 5rem;
+        position: relative;
+    }
+
+    .welcome_signup {
+        display: block;
+        text-align: center;
+        background: none;
+        color: white;
+        height: 1.7rem;
+        width: 9rem;
+        border-radius: 1rem;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+
+    .nav {
+        top: 0;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .signup button {
+        display: none;
+    }
+
+    header {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(images/home.png);
+        /* border: 1px solid black; */
+    }
+
+    .welcome,
+    .welcome button {
+        text-shadow: 4px 4px 10px black;
+
+    }
+
+    .pricebox {
+        margin: 1rem;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:591px) {
+    .pricebox {
+        width: 70%;
+        margin: auto;
+    }
+
+    .price_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* border: 1px solid red; */
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (max-width:525px) {
+    .options {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+
+    .dropdown {
+        display: block;
+    }
+}
