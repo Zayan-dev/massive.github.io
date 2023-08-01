@@ -273,7 +273,7 @@ h3 {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
     border: none;
     position: relative;
-    bottom: 0rem;
+    bottom: 0.5rem;
     transition: all 0.4s ease-in-out;
 }
 
@@ -464,6 +464,13 @@ footer {
 }
 
 @media screen and (max-width:591px) {
+
+    .welcome h4,
+    .welcome p {
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
     .pricebox {
         width: 70%;
         margin: auto;
@@ -474,6 +481,26 @@ footer {
         grid-template-columns: 1fr;
         /* border: 1px solid red; */
         row-gap: 1rem;
+    }
+
+    .team_section .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container img {
+        width: 35vw;
+        padding: 0;
+    }
+
+    .colorbox {
+        display: none;
+    }
+
+    .contactform {
+        width: 98%;
     }
 }
 
