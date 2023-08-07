@@ -1,8 +1,9 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .welcome_signup,
@@ -26,9 +27,6 @@ header {
     width: 100%;
     z-index: 5;
 }
-
-
-
 
 .dropdown {
     display: none;
@@ -91,11 +89,21 @@ header {
     justify-content: space-around;
 }
 
+/* .img{
+    width: 40%;
+    border: 2px solid black;
+} */
+
 .img img {
     margin-top: 3rem;
-    width: 70vh;
+    /* width: 70vh; */
     /* border: 2px solid black;     */
 }
+
+/* .welcome{
+    width: 50%;
+    border: 2px solid black;
+} */
 
 .welcome h4 {
     font-size: 3rem;
@@ -202,7 +210,7 @@ h3 {
 /* CSS FOR CAROUSEL */
 .carousel-item {
     /* background-color: yellow; */
-    height: 45vh;
+    height: 55vh;
 
 }
 
@@ -398,7 +406,7 @@ footer {
 
 /* //Making it responsive */
 
-@media screen and (max-width:827px) {
+@media screen and (max-width:828px) {
     .mob_img {
         display: none;
     }
@@ -414,6 +422,10 @@ footer {
 }
 
 @media screen and (max-width:763px) {
+
+    .welcome {
+        width: 100%;
+    }
 
     .welcome button {
         top: 5rem;
@@ -447,8 +459,8 @@ footer {
     header {
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url(images/home.png);
-        /* border: 1px solid black; */
+        /* background-image: url(images/home.png);
+        border: 1px solid black; */
     }
 
     .welcome,
